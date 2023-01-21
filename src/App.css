@@ -1,0 +1,52 @@
+.container {
+    margin-top: 20px;
+
+}
+
+
+.pimages h2 {
+    transition: all ease-out 280ms;
+
+    cursor: pointer;
+}
+
+.pimages h2:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+@media(min-width: 768px) {
+    .container {
+        display: grid;
+        grid-gap: 15px;
+
+        width: 100%;
+
+        grid-template-areas: 
+        "image image sider"
+        "pimage pimage pimage"
+        ; 
+    }
+
+    .introImg {
+        grid-area: image;
+    }
+
+    .infoCont {
+        grid-area: sider;
+    }
+
+    .pimages {
+        display: grid;
+        grid-template-columns: repeat(3,320px);
+        grid-area: pimage;
+        align-items: center;
+
+        margin-top: 30px;
+
+        width: 100%;
+
+
+        grid-gap: 40px;
+
+    }
+}

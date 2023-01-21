@@ -1,0 +1,39 @@
+.pimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    gap: 20px;
+}
+
+.pimage p {
+    color: hsl(236, 13%, 42%);
+}
+
+.pimageCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pimage img {
+    width: 110px;
+    height: 150px;
+}
+
+.explanation h1 {
+    color:  hsl(233, 8%, 79%);
+}
+
+.explanation h2 {
+    font-size: 1rem;
+    color: hsl(240, 100%, 5%);
+}
+
+@media(min-width: 768px) {
+    .pimage {
+        margin-bottom: unset;
+    }
+}

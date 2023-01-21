@@ -1,0 +1,59 @@
+.introImg {
+    width: 100%;
+}
+
+.intro h1 {
+    color: hsl(240, 100%, 5%);
+}
+
+.intro p {
+    color: hsl(236, 13%, 42%);
+}
+
+button {
+    outline: none;
+    border: none;
+
+    width: 155px;
+
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+
+    padding: 10px 12px;
+
+    cursor: pointer;
+
+    transition: all ease-in-out 280ms;
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+p {
+    margin: 20px 0;
+}
+
+@media(min-width:768px) {
+    .introImg {
+        width: 700px;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 650px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+        width: 250px;
+    }
+
+    .intro p {
+        margin: 20px 0;
+        width: 300px;
+    }
+}

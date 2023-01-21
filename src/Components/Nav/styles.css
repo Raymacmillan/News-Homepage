@@ -1,0 +1,91 @@
+@keyframes siderAnim {
+    from{
+        right: -70%;
+        top: -20px;
+    }to {
+        left: 70%;
+        top: -20px;
+    }
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container { 
+    position: absolute;
+
+    animation: siderAnim 0.9s ;
+
+    width: 70%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    right: -15px;
+    top: -20px;
+}
+
+.links-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-left: -95px;
+
+    gap: 25px;
+    list-style: none;
+
+}
+
+.links-container ul li a {
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all ease-in 280ms;
+
+}
+
+.links-container ul a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.harmburger-menu {
+    position: absolute;
+    right: 5px;
+}
+
+@media (min-width: 768px) {
+    .links-container {
+        position: unset;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+
+        top: 0;
+        right: 0;
+    }
+    .links-container ul {
+        flex-direction: row;
+
+        margin-top: unset;
+    }
+
+    .links-container ul li a {
+        color: hsl(236, 13%, 42%);
+    }
+    .harmburger-menu {
+        display: none;
+    }
+
+
+
+}

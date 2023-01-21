@@ -1,0 +1,45 @@
+.infoCont {
+    padding: 20px;
+
+    width: 100%;
+
+    background-color: hsl(240, 100%, 5%);
+
+    margin: 50px 0;
+}
+
+.infoCont h1 {
+    color: hsl(35, 77%, 62%);
+}
+
+.subInfo h3 {
+    color: hsl(36, 100%, 99%);
+
+    transition: all ease-in-out 250ms;
+
+    cursor: pointer;
+}
+
+.subInfo h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+p {
+    color:  hsl(233, 8%, 79%);
+}
+
+.subInfo .line {
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    border: 1px solid hsl(233, 8%, 79%);
+}
+
+@media(min-width: 768px) {
+    .infoCont {
+        margin: unset;
+
+        width: 300px;
+    }
+}
